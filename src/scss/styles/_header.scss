@@ -1,0 +1,96 @@
+.wrapper-header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   transition: top 0.3s;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2.6rem 0.625rem 0;
+   &-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 7.75rem;
+      &__item {
+         position: relative;
+         margin-right: 3.75rem;
+         font-size: 16px;
+         color: #ffffff;
+         &-link {
+            padding: 10px 1px;
+         }
+      }
+   }
+   &-btn {
+      padding: 0.875rem 2.25rem;
+      color: $font-main;
+      font-weight: 500;
+      background-color: $color-red;
+      border-radius: 15px;
+      cursor: pointer;
+   }
+}
+.logo {
+   font-family: $font-logo;
+   position: relative;
+   font-size: 24px;
+   color: #ffffff;
+   cursor: pointer;
+}
+.logo::before {
+   transform: scaleX(0);
+   transform-origin: bottom right;
+}
+
+.logo:hover::before {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
+
+.logo::before {
+   content: " ";
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   inset: -14px;
+   background-color: lighten($color-red, 15%);
+   z-index: -1;
+   transition: transform 0.3s ease;
+}
+.header-menu__item::before {
+   transform: scaleX(0);
+   transform-origin: bottom right;
+}
+
+.header-menu__item:hover::before {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
+
+.header-menu__item::before {
+   content: " ";
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   inset: -16px -20px;
+   background-color: lighten($color-red, 15%);
+   z-index: -1;
+   transition: transform 0.3s ease;
+}
+
+@media (orientation: landscape) {
+   body {
+      grid-auto-flow: column;
+   }
+}

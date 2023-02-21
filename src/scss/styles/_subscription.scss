@@ -1,0 +1,87 @@
+.subscription {
+   background-color: #1f1f1f;
+   &-grid {
+      display: grid;
+      grid-gap: 13.5rem;
+      grid-template-columns: repeat(2, 1fr);
+      // padding-top: 5rem;
+      padding-bottom: 7rem;
+      &__left {
+         display: flex;
+         flex-direction: column;
+         &-title {
+            margin-top: 5.75rem;
+            font-weight: 500;
+            font-size: 48px;
+            color: #ffffff;
+         }
+         &-descr {
+            margin-top: 2.4rem;
+            margin-bottom: 0;
+            max-width: 28.75rem;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 23px;
+            color: #ffffff;
+            opacity: 0.8;
+         }
+         &-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2.6rem 1rem;
+            margin-top: 3.6rem;
+            &--item {
+               position: relative;
+               margin-left: 3rem;
+               min-width: 12.2rem;
+               font-weight: 500;
+               font-size: 18px;
+               letter-spacing: -0.02em;
+               color: #ffffff;
+               span {
+                  font-weight: 400;
+                  font-size: 15px;
+                  letter-spacing: -0.011em;
+                  color: #ffffff;
+                  opacity: 0.8;
+               }
+               &::before {
+                  content: "\2714 \fe0e";
+                  position: absolute;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  top: 0.2rem;
+                  left: -3rem;
+                  width: 32px;
+                  height: 32px;
+                  background-color: $color-red;
+                  border-radius: 50%;
+                  color: #1f1f1f;
+               }
+            }
+         }
+      }
+      &__right {
+         margin-top: 5.75rem;
+         position: relative;
+         &-img {
+            margin-left: 1.2rem;
+            position: relative;
+            width: 486px;
+            height: 540px;
+         }
+         &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0.3125rem;
+            width: 400px;
+            height: 400px;
+            background-color: $color-red;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+         }
+      }
+   }
+}
