@@ -1,0 +1,27 @@
+.advantages-subscr {
+   background-color: #1f1f1f;
+   &__img {
+      justify-self: start;
+      &::before {
+         left: 0;
+      }
+   }
+   .grid__right-img {
+      margin-left: -15px;
+   }
+   .advantages-subscr__left {
+      width: 100%;
+      &__descr {
+         min-width: 100%;
+      }
+   }
+   .advantages-subscr__left__list {
+      span {
+         font-weight: 400;
+         font-size: 15px;
+         line-height: 23px;
+         color: #ffffff;
+         opacity: 0.8;
+      }
+   }
+}

@@ -1,5 +1,5 @@
 @font-face {
-   font-family: "Rubik Mono One", sans-serif;
+   font-family: "Rubik Mono One";
    font-display: swap;
    src: url("../fonts/RubikMonoOne-Regular.woff2") format(woff2),
       url("../fonts/RubikMonoOne-Regular.woff") format("woff");
@@ -7,38 +7,23 @@
    font-style: normal;
 }
 @font-face {
-   font-family: "Poppins", sans-serif;
+   font-family: "Poppins";
    font-display: swap;
    src: url("../fonts/Poppins-SemiBold.woff2") format(woff2), url("../fonts/Poppins-SemiBold.woff") format("woff");
    font-weight: 600;
    font-style: normal;
 }
 @font-face {
-   font-family: "Poppins", sans-serif;
+   font-family: "Poppins";
    font-display: swap;
    src: url("../fonts/Poppins-Medium.woff2") format(woff2), url("../fonts/Poppins-Medium.woff") format("woff");
    font-weight: 500;
    font-style: normal;
 }
 @font-face {
-   font-family: "Poppins", sans-serif;
+   font-family: "Poppins";
    font-display: swap;
    src: url("../fonts/Poppins-Regular.woff2") format(woff2), url("../fonts/Poppins-Regular.woff") format("woff");
-   font-weight: 400;
-   font-style: normal;
-}
-@font-face {
-   font-family: "Montserrat Subrayada", sans-serif;
-   font-display: swap;
-   src: url("../fonts/MontserratSubrayada-Regular.woff2") format(woff2),
-      url("../fonts/MontserratSubrayada-Regular.woff") format("woff");
-   font-weight: 400;
-   font-style: normal;
-}
-@font-face {
-   font-family: "Roboto", sans-serif;
-   font-display: swap;
-   src: url("../fonts/Roboto-Black.woff2") format(woff2), url("../fonts/Roboto-Black.woff") format("woff");
    font-weight: 400;
    font-style: normal;
 }

@@ -3,13 +3,14 @@
    background: center/cover no-repeat url(../../img/edunema_bg.png) rgba(23, 23, 23, 0.85);
    background-blend-mode: multiply;
    .wrapper {
+      padding-top: 13rem;
+      padding-bottom: 9rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
    }
    &__title {
-      padding-top: 16rem;
       font-weight: 600;
       font-size: 64px;
       line-height: 130%;
