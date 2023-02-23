@@ -13,3 +13,16 @@ window.onscroll = function () {
    }
    prevScrollpos = currentScrollPos;
 }
+
+const items = Array.from(document.querySelectorAll('.faq__list__item'));
+
+items.forEach(item => {
+   item.addEventListener('click', (e) => {
+      let arr = e.target.closest('span');
+      if (!arr) return;
+      if (arr) {
+         item.children.item(1).classList.toggle('active');
+         item.children.item(2).classList.toggle('visible');
+      }
+   })
+})
