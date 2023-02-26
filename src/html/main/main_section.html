@@ -12,7 +12,9 @@
          </p>
          <div class="main-section__author">
             <span class="author">
-               John Alexander
+               <a href="#s" class="author__link">
+                  John Alexander
+               </a>
             </span>
             <div class="stars">
                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,8 +48,11 @@
                5.0
             </span>
          </div>
-         <form class="main-section__form">
-            <input class="email-form" type="text" name="email" id="email" placeholder="Your email">
+         <form class="main-section__form form">
+            <div class="input__group">
+               <input class="email-form" type="email" name="email" id="email">
+               <label class="placeholder">Your email</label>
+            </div>
             <button class="form-btn main-btn" type="submit">Get started</button>
          </form>
       </div>

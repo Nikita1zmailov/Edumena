@@ -1,6 +1,6 @@
 .reviews {
    background-color: #151515;
-   padding: 4rem 0 6rem;
+   padding: 4rem 0 0;
    &__title {
       text-align: center;
       font-weight: 600;
@@ -23,6 +23,7 @@
       justify-content: space-evenly;
       align-items: center;
       flex-wrap: wrap;
+      margin: 0;
       .reviews__item {
          max-width: 384px;
          display: flex;
@@ -30,7 +31,7 @@
          padding: 22px 18px;
          margin-bottom: 4.75rem;
          background-color: #1f1f1f;
-         box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.05);
+         box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.05);
          border-radius: 20px;
          &__header {
             display: flex;
@@ -49,6 +50,30 @@
                      font-size: 16px;
                      line-height: 24px;
                      color: #c4c4c4;
+                     .title__link {
+                        position: relative;
+                        display: inline-block;
+                        transition: all 0.25s ease-out;
+                        &:hover {
+                           color: $font-main;
+                        }
+                        &::after {
+                           content: "";
+                           position: absolute;
+                           width: 100%;
+                           transform: scaleX(0);
+                           height: 1px;
+                           bottom: 0;
+                           left: 0;
+                           background-color: $font-main;
+                           transform-origin: bottom right;
+                           transition: transform 0.25s ease-out;
+                        }
+                        &:hover::after {
+                           transform: scaleX(1);
+                           transform-origin: bottom left;
+                        }
+                     }
                   }
                   .header__wrapper__small {
                      font-weight: 400;

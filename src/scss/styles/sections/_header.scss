@@ -6,12 +6,12 @@
    transition: top 0.3s;
    z-index: 5;
 }
-
 .header {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 2.6rem 0.625rem 0;
+   padding: 1.6rem 0.625rem 1rem;
+   z-index: 5;
    &-menu {
       display: flex;
       align-items: center;
@@ -37,11 +37,14 @@
    }
 }
 .logo {
-   font-family: "Rubik Mono One";
+   font-family: "Pacifico";
    position: relative;
    font-size: 24px;
    color: #ffffff;
    cursor: pointer;
+   &:hover {
+      text-shadow: 1px 1px 3px #000;
+   }
 }
 .logo::before {
    transform: scaleX(0);
