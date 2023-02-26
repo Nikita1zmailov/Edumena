@@ -1,6 +1,13 @@
 //основной модуль 
 import gulp from "gulp";
 
+// gh pages
+import ghPages from 'gulp-gh-pages';
+
+gulp.task('deploy', function () {
+   return gulp.src('./dist/**/*')
+      .pipe(ghPages());
+});
 //импорт путей 
 import { path } from "./gulp/config/path.js";
 

@@ -524,7 +524,7 @@ svg {
 }
 .main-section {
   min-height: 100vh;
-  background: center/cover no-repeat url(../../img/edunema_bg.png) rgba(23, 23, 23, 0.85);
+  background: center/cover no-repeat url(../img/edunema_bg.png) rgba(23, 23, 23, 0.85);
   background-blend-mode: multiply;
 }
 .main-section .wrapper {
@@ -863,13 +863,13 @@ svg {
   margin-left: 23rem;
 }
 .offers__container .arr_down::after {
-  content: url(../../img/svg/arrow.svg);
+  content: url(../img/svg/arrow.svg);
   position: absolute;
   top: -2.2rem;
   right: 11.625rem;
 }
 .offers__container .arr_left::after {
-  content: url(../../img/svg/arrow.svg);
+  content: url(../img/svg/arrow.svg);
   position: absolute;
   rotate: 90deg;
   bottom: -6.8rem;
@@ -877,7 +877,7 @@ svg {
   transform: translateX(-50%);
 }
 .offers__container .arr_right::after {
-  content: url(../../img/svg/arrow.svg);
+  content: url(../img/svg/arrow.svg);
   position: absolute;
   rotate: -90deg;
   top: -3.2rem;
@@ -891,7 +891,7 @@ svg {
   position: relative;
 }
 .offers__grid .waved::before {
-  content: url(../../img/svg/arrow__wave.svg);
+  content: url(../img/svg/arrow__wave.svg);
   position: absolute;
   left: -60%;
   top: 70%;
@@ -899,7 +899,7 @@ svg {
   transform: rotate(110deg);
 }
 .offers__grid .waved_2::before {
-  content: url(../../img/svg/arrow_wave_2.svg);
+  content: url(.../img/svg/arrow_wave_2.svg);
   position: absolute;
   left: 48%;
   bottom: 15%;
@@ -919,7 +919,7 @@ svg {
   width: 440px;
 }
 .offers__grid__text:first-child::before {
-  content: url(../../img/svg/arrow__wave.svg);
+  content: url(../img/svg/arrow__wave.svg);
   position: absolute;
   left: 48%;
   top: 10%;
@@ -1137,7 +1137,7 @@ svg {
   position: relative;
 }
 .mentors .video-wrapper__items .video-wrapper__item .pos::after {
-  content: url(../../img/svg/play.svg);
+  content: url(../img/svg/play.svg);
   position: absolute;
   width: 58px;
   height: 58px;
@@ -1457,7 +1457,7 @@ svg {
   background-color: #151515;
 }
 .join__wrapper {
-  background: center url(../../img/edunema_bg_2.png) no-repeat;
+  background: center url(../img/edunema_bg_2.png) no-repeat;
   background-size: 1200px;
   border-radius: 2.5rem;
   padding: 6.25rem 4.5rem 6.75rem;
@@ -1581,7 +1581,7 @@ svg {
   position: fixed;
   top: 0;
   left: 0;
-  background: center/cover no-repeat url(../../../img/registration_bg.png);
+  background: center/cover no-repeat url(../img/registration_bg.png);
   height: 100vh;
   width: 100%;
   z-index: 100;
