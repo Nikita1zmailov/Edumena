@@ -10,7 +10,7 @@
 
 <body class="body-page">
    <header class="wrapper-header">
-   <div class="header container">
+   <div class="header">
       <div class="logo">Endumena</div>
       <div class="header-menu">
          <div class="header-menu__item">
@@ -24,7 +24,7 @@
             </a>
          </div>
          <div class="header-menu__item">
-            <a href="#" class="header-menu__item-link">
+            <a href="#mentors" class="header-menu__item-link">
                Mentors
             </a>
          </div>
@@ -35,8 +35,19 @@
          </div>
       </div>
       <button class="header-btn main-btn">Register now</button>
+      <div id="hamburger-icon" class="menu">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+         <ul class="mobile-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cuorses">Courses</a></li>
+            <li><a href="#mentors">Mentors</a></li>
+            <li id="login" class="login__link"><a type="button">Register now</a></li>
+         </ul>
+      </div>
    </div>
-</header> <section class="main-section main-bg">
+</header> <section class="main-section main-bg" id="home">
    <div class="container">
       <div class="wrapper">
          <h1 class="main-section__title title">
@@ -136,6 +147,7 @@
       <div class="grid">
          <div class="grid__right advantages-subscr__img">
             <img class="grid__right-img" src="../img/subscription.png" alt="some_guys" width="486" height="540">
+            <button class="grid__right-btn main-btn grid__left-btn advantages__btn">Create account</button>
          </div>
          <div class="grid__left advantages-subscr__left">
             <h2 class="grid__left-title advantages-subscr__left__title">
@@ -179,7 +191,7 @@
       </div>
    </div>
 </section>
-<section class="advantages advantages_share">
+<section id="advantages_share" class="advantages_share">
    <div class="container">
       <div class="grid">
          <div class="grid__left advantages_share__block">
@@ -207,6 +219,18 @@
       <h2 class="offers__title">
          Share about the community.
       </h2>
+      <div class="offers-mob">
+         <h2 class="offers-mob__title">
+            Edumena community. Building the future.
+         </h2>
+         <p class="offers-mob__descr">
+            We also ensure that our courses are affordable to anyone and accessible from anywhere in the world. Our
+            exceptional
+            mentors are there to guide our students in pursuit of their life aspirations. Together we build a community
+            that
+            supports each other and make the whole experience into another level. 
+         </p>
+      </div>
       <div class="offers__container">
          <div class="offers__container__item arr_down">
             Network
@@ -242,7 +266,7 @@
             </div>
          </div>
          <div class="offers__grid__img">
-            <img src="../img/offers_1.png" alt="offers" class="offers__img" style="width: 447px; height: 267px;">
+            <img src="../img/offers_1.png" alt="offers" class="offers__img" width="447" height="267">
          </div>
          <div class="offers__grid__text reversed waved">
             <span class="offers__grid__text-small">
@@ -266,7 +290,7 @@
             </div>
          </div>
          <div class="offers__grid__img reversed__img">
-            <img src="../img/offers_2.png" alt="offers" class="offers__img" style="width: 447px; height: 267px;">
+            <img src="../img/offers_2.png" alt="offers" class="offers__img" width="447" height="267">
          </div>
          <div class="offers__grid__text waved_2">
             <span class="offers__grid__text-small">
@@ -319,8 +343,59 @@
             <img src="../img/offers_4.png" alt="offers" class="offers__img" width="447" height="267">
          </div>
       </div>
+      <div class="offers-mob">
+         <h2 class="offers-mob__title">
+            We offer the plane and the pilot.
+         </h2>
+         <ul class="offers-mob__grid">
+            <li class="grid__item">
+               <div class="grid__item__wrapper">
+                  <span class="wrapper__small-title">
+                     Step 1
+                  </span>
+                  <img src="../img/offers_mob.png" alt="offers" class="wrapper__img" width="327" height="194">
+               </div>
+               <h3 class="grid__item__title">
+                  Сhoose the courses of your choice.
+               </h3>
+               <p class="grid__item__descr">
+                  On our platform you will find many courses on programming, design, photo / video editing.
+               </p>
+            </li>
+            <li class="grid__item">
+               <div class="grid__item__wrapper">
+                  <span class="wrapper__small-title">
+                     Step 2
+                  </span>
+                  <img src="../img/offers_mob.png" alt="offers" class="wrapper__img" width="327" height="194">
+               </div>
+               <h3 class="grid__item__title">
+                  Our managers will contact you.
+               </h3>
+               <p class="grid__item__descr">
+                  You will be offered a detailed training plan in areas of interest to you.
+               </p>
+            </li>
+            <li class="grid__item">
+               <div class="grid__item__wrapper">
+                  <span class="wrapper__small-title">
+                     Step 3
+                  </span>
+                  <img src="../img/offers_mob.png" alt="offers" class="wrapper__img" width="327" height="194">
+               </div>
+               <h3 class="grid__item__title">
+                  And now forward to absorb knowledge.
+               </h3>
+               <p class="grid__item__descr">
+                  After purchasing the course, you will have access to video lessons, and you will also have an online
+                  mentor assigned to
+                  you.
+               </p>
+            </li>
+         </ul>
+      </div>
    </div>
-</section> <section class="mentors">
+</section> <section class="mentors" id="mentors">
    <div class="container">
       <div class="wrapper">
          <div class="wrapper__text">
@@ -332,7 +407,7 @@
                on Edumena. We provide the tools and skills.
             </p>
          </div>
-         <button class="wrapper__text__btn">View More</button>
+         <button class="wrapper__text__btn"><a href="pages/mentors.html">View More</a></button>
       </div>
       <ul class="cards">
          <li class="card">
@@ -372,7 +447,67 @@
             <button class="main-btn card__btn">View Details</button>
          </li>
       </ul>
-      <div class="video-wrapper">
+      <ul class="cards-mob">
+         <li class="mob-card">
+            <img src="../img/mentors_1.png" alt="mentor" class="mob-card__img" width="72" height="72">
+            <h4 class="mob-card__title">Mr.Sandi Tofang</h4>
+            <span class="mob-card__status">Mentoring: UI/UX Designer</span>
+            <div class="mob-card__wrapper">
+               <div class="wrapper__courses">
+                  <span class="courses__count">5</span>
+                  <span class="courses__descr">Courses</span>
+               </div>
+               <div class="wrapper__courses">
+                  <span class="students__count courses__count">17</span>
+                  <span class="students__descr courses__descr">Students</span>
+               </div>
+               <div class="wrapper__courses">
+                  <span class="rewievs__count courses__count">5</span>
+                  <span class="rewievs__descr courses__descr">Courses</span>
+               </div>
+            </div>
+         </li>
+         <li class="mob-card">
+            <img src="../img/mentors_2.png" alt="mentor" class="mob-card__img" width="72" height="72">
+            <h4 class="mob-card__title">Jessica Adams</h4>
+            <span class="mob-card__status">Mentoring: Frontend Dev.</span>
+            <div class="mob-card__wrapper">
+               <div class="wrapper__courses">
+                  <span class="courses__count">10</span>
+                  <span class="courses__descr">Courses</span>
+               </div>
+               <div class="wrapper__courses">
+                  <span class="students__count courses__count">44</span>
+                  <span class="students__descr courses__descr">Students</span>
+               </div>
+               <div class="wrapper__courses">
+                  <span class="rewievs__count courses__count">23</span>
+                  <span class="rewievs__descr courses__descr">Courses</span>
+               </div>
+            </div>
+         </li>
+         <li class="mob-card">
+            <img src="../img/mentors_3.png" alt="mentor" class="mob-card__img" width="72" height="72">
+            <h4 class="mob-card__title">Alex Fedder</h4>
+            <span class="mob-card__status">Mentoring: Full-Stack Dev.</span>
+            <div class="mob-card__wrapper">
+               <div class="wrapper__courses">
+                  <span class="courses__count">7</span>
+                  <span class="courses__descr">Courses</span>
+               </div>
+               <div class="wrapper__courses">
+                  <span class="students__count courses__count">122</span>
+                  <span class="students__descr courses__descr">Students</span>
+               </div>
+               <div class="wrapper__courses">
+                  <span class="rewievs__count courses__count">200</span>
+                  <span class="rewievs__descr courses__descr">Courses</span>
+               </div>
+            </div>
+         </li>
+         <button class="wrapper__text__btn"><a href="pages/mentors.html">View More</a></button>
+      </ul>
+      <div class="video-wrapper" id="cuorses">
          <h2 class="video-wrapper__title">
             Explore courses from industry leaders.
          </h2>
@@ -383,7 +518,8 @@
          <ul class="video-wrapper__items">
             <li class="video-wrapper__item">
                <div class="pos">
-                  <img src="../img/video_1.png" alt="video" class="video-wrapper__item__img" width="352" height="258">
+                  <video class="video-wrapper__item__img" src="" id="video" class="screen" poster="../img/video_1.png"
+                     width="352" height="258"></video>
                </div>
                <h4 class="video-wrapper__item__title">
                   Designing digital product for
@@ -429,7 +565,8 @@
             </li>
             <li class="video-wrapper__item">
                <div class="pos">
-                  <img src="../img/video_2.png" alt="video" class="video-wrapper__item__img" width="352" height="258">
+                  <video class="video-wrapper__item__img" src="" id="video" class="screen" poster="../img/video_2.png"
+                     width="352" height="258"></video>
                </div>
                <h4 class="video-wrapper__item__title">
                   Learn to sketch UI design and
@@ -475,7 +612,20 @@
             </li>
             <li class="video-wrapper__item">
                <div class="pos">
-                  <img src="../img/video_3.png" alt="video" class="video-wrapper__item__img" width="352" height="258">
+                  <video class="video-wrapper__item__img video_player" id="video" poster="../img/video_3.png"
+                     width="352" height="258">
+                     <source src="../img/video/video_2.mp4" type="video/mp4">
+                     <!-- <div class="controls">
+                        <button class="btn" id="play">
+                           <i class="fa fa-play fa-2x"></i>
+                        </button>
+                        <button class="btn" id="stop">
+                           <i class="fa fa-stop fa-2x"></i>
+                        </button>
+                        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+                        <span class="timestamp" id="timestamp">00:00</span>
+                     </div> -->
+                  </video>
                </div>
                <h4 class="video-wrapper__item__title">
                   Show your personality
@@ -519,6 +669,197 @@
                   </span>
                </div>
             </li>
+         </ul>
+      </div>
+      <div class="video-mob">
+         <h2 class="video-mob__title">
+            Explore courses from industry leaders.
+         </h2>
+         <ul class="video-mob__items">
+            <li class="video-mob__item">
+               <img class="item__img" src="../img/video_mob__1.png" id="video" width="327" height="152"></img>
+               <h4 class="item__title">
+                  Basic UI/UX Designer
+               </h4>
+               <span class="item__author">
+                  Azamat Baimatov
+               </span>
+               <div class="item__price">
+                  <span class="item__price--red">$145</span>
+                  <span class="item__price--underline">$160</span>
+               </div>
+               <div class="item__rating">
+                  <div class="video-rating">
+                     <span class="raiting">
+                        5.0
+                     </span>
+                     <div class="stars">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                     </div>
+                     <span class="raiting-reviews">
+                        (239)
+                     </span>
+                  </div>
+                  <div class="cont-favorite">
+                     <svg class="favorite" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M15.7384 4.99936C14.3052 3.60912 12.0124 3.54197 10.4972 4.80391C10.3528 4.92414 10.1759 4.98252 10.0001 4.9803C9.82425 4.98252 9.64736 4.92414 9.50299 4.80391C7.98778 3.54197 5.69501 3.60912 4.26176 4.99936C2.83933 6.3791 2.77428 8.56582 4.06054 10.0189C4.07943 10.0403 4.09692 10.0624 4.113 10.0852L10.0001 15.7956L15.8872 10.0852C15.9033 10.0624 15.9207 10.0403 15.9396 10.0189C17.2259 8.56582 17.1608 6.3791 15.7384 4.99936ZM17.1796 10.9138C18.9004 8.85386 18.7718 5.81879 16.7994 3.90557C14.9467 2.10855 12.0864 1.90091 10.0001 3.27784C7.91377 1.90091 5.05342 2.10855 3.2008 3.90557C1.22839 5.81879 1.09973 8.85386 2.82055 10.9138C2.85549 10.9744 2.89892 11.0304 2.95005 11.08L9.46961 17.4039C9.76516 17.6906 10.235 17.6906 10.5306 17.4039L17.0501 11.08C17.1012 11.0304 17.1447 10.9744 17.1796 10.9138Z"
+                           fill="#EE4D4D" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M14.5707 7.71461C14.5707 6.87303 13.8885 6.1908 13.0469 6.1908V4.66699C14.73 4.66699 16.0945 6.03146 16.0945 7.71461H14.5707Z"
+                           fill="#EE4D4D" />
+                     </svg>
+                  </div>
+               </div>
+            </li>
+            <li class="video-mob__item">
+               <img class="item__img" src="../img/video_mob__2.png" id="video" width="327" height="152"></img>
+               <h4 class="item__title">
+                  React JS For Beginner
+               </h4>
+               <span class="item__author">
+                  Micah Richard
+               </span>
+               <div class="item__price">
+                  <span class="item__price--red">$129</span>
+                  <span class="item__price--underline">$345</span>
+               </div>
+               <div class="item__rating">
+                  <div class="video-rating">
+                     <span class="raiting">
+                        4.8
+                     </span>
+                     <div class="stars">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                     </div>
+                     <span class="raiting-reviews">
+                        (155)
+                     </span>
+                  </div>
+                  <div class="cont-favorite">
+                     <svg class="favorite" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M15.7384 4.99936C14.3052 3.60912 12.0124 3.54197 10.4972 4.80391C10.3528 4.92414 10.1759 4.98252 10.0001 4.9803C9.82425 4.98252 9.64736 4.92414 9.50299 4.80391C7.98778 3.54197 5.69501 3.60912 4.26176 4.99936C2.83933 6.3791 2.77428 8.56582 4.06054 10.0189C4.07943 10.0403 4.09692 10.0624 4.113 10.0852L10.0001 15.7956L15.8872 10.0852C15.9033 10.0624 15.9207 10.0403 15.9396 10.0189C17.2259 8.56582 17.1608 6.3791 15.7384 4.99936ZM17.1796 10.9138C18.9004 8.85386 18.7718 5.81879 16.7994 3.90557C14.9467 2.10855 12.0864 1.90091 10.0001 3.27784C7.91377 1.90091 5.05342 2.10855 3.2008 3.90557C1.22839 5.81879 1.09973 8.85386 2.82055 10.9138C2.85549 10.9744 2.89892 11.0304 2.95005 11.08L9.46961 17.4039C9.76516 17.6906 10.235 17.6906 10.5306 17.4039L17.0501 11.08C17.1012 11.0304 17.1447 10.9744 17.1796 10.9138Z"
+                           fill="#EE4D4D" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M14.5707 7.71461C14.5707 6.87303 13.8885 6.1908 13.0469 6.1908V4.66699C14.73 4.66699 16.0945 6.03146 16.0945 7.71461H14.5707Z"
+                           fill="#EE4D4D" />
+                     </svg>
+                  </div>
+               </div>
+            </li>
+            <li class="video-mob__item">
+               <img class="item__img" src="../img/video_mob__3.png" id="video" width="327" height="152"></img>
+               <h4 class="item__title">
+                  Advanced UI/UX Designer
+               </h4>
+               <span class="item__author">
+                  Azamat Baimatov
+               </span>
+               <div class="item__price">
+                  <span class="item__price--red">$99</span>
+                  <span class="item__price--underline">$210</span>
+               </div>
+               <div class="item__rating">
+                  <div class="video-rating">
+                     <span class="raiting">
+                        4.9
+                     </span>
+                     <div class="stars">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.95158 1.80915C6.65223 0.88784 5.34882 0.887833 5.04947 1.80915L4.40243 3.80054H2.30856C1.33984 3.80054 0.937056 5.04015 1.72077 5.60955L3.41475 6.8403L2.76771 8.83169C2.46836 9.753 3.52283 10.5191 4.30655 9.94973L6.00053 8.71898L7.6945 9.94972C8.47821 10.5191 9.5327 9.75301 9.23335 8.83169L8.5863 6.8403L10.2803 5.60955C11.064 5.04015 10.6612 3.80054 9.6925 3.80054L7.59863 3.80054L6.95158 1.80915Z"
+                              fill="#FFBF69" />
+                        </svg>
+                     </div>
+                     <span class="raiting-reviews">
+                        (423)
+                     </span>
+                  </div>
+                  <div class="cont-favorite">
+                     <svg class="favorite" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M15.7384 4.99936C14.3052 3.60912 12.0124 3.54197 10.4972 4.80391C10.3528 4.92414 10.1759 4.98252 10.0001 4.9803C9.82425 4.98252 9.64736 4.92414 9.50299 4.80391C7.98778 3.54197 5.69501 3.60912 4.26176 4.99936C2.83933 6.3791 2.77428 8.56582 4.06054 10.0189C4.07943 10.0403 4.09692 10.0624 4.113 10.0852L10.0001 15.7956L15.8872 10.0852C15.9033 10.0624 15.9207 10.0403 15.9396 10.0189C17.2259 8.56582 17.1608 6.3791 15.7384 4.99936ZM17.1796 10.9138C18.9004 8.85386 18.7718 5.81879 16.7994 3.90557C14.9467 2.10855 12.0864 1.90091 10.0001 3.27784C7.91377 1.90091 5.05342 2.10855 3.2008 3.90557C1.22839 5.81879 1.09973 8.85386 2.82055 10.9138C2.85549 10.9744 2.89892 11.0304 2.95005 11.08L9.46961 17.4039C9.76516 17.6906 10.235 17.6906 10.5306 17.4039L17.0501 11.08C17.1012 11.0304 17.1447 10.9744 17.1796 10.9138Z"
+                           fill="#EE4D4D" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M14.5707 7.71461C14.5707 6.87303 13.8885 6.1908 13.0469 6.1908V4.66699C14.73 4.66699 16.0945 6.03146 16.0945 7.71461H14.5707Z"
+                           fill="#EE4D4D" />
+                     </svg>
+                  </div>
+               </div>
+            </li>
+            <button class="video-mob__btn wrapper__text__btn"><a href="pages/courses.html">View More</a></button>
          </ul>
       </div>
       <div class="get-started">
@@ -662,82 +1003,112 @@
       <ul class="faq__list">
          <li class="faq__list__item">
             <p class="item__text">
-               How much should i pay for online class?
+               Who should take an Online Course?
             </p>
             <span class="arrow">
                <span></span>
                <span></span>
             </span>
             <p class="item__description">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae at quasi distinctio assumenda. Ut qui
-               quo
-               enim alias aut maxime necessitatibus, deleniti repellat adipisci perspiciatis odio reiciendis officia
-               architecto facere possimus quaerat, quos incidunt porro culpa iusto. Hic possimus sunt rem minus,
-               consequatur natus atque placeat, ipsam blanditiis totam quibusdam.
+               Students join our online courses for a variety of reasons and come from diverse backgrounds, professions,
+               and age
+               groups. With online courses, you can: <br>
+               Advance your skill-set or begin a career change. <br>
+               Take the next step in your formal education. <br>
+               Ease the transition before entering a full-time academic program. <br>
+               Enjoy learning a new topic. <br>
+               Whatever the reason, our online courses are a flexible way of learning about the art world without
+               disrupting your daily
+               life.
             </p>
          </li>
          <li class="faq__list__item">
             <p class="item__text">
-               Can i custumize my class learning online?
+               How do I register?
             </p>
             <span class="arrow">
                <span></span>
                <span></span>
             </span>
             <p class="item__description">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae at quasi distinctio assumenda. Ut qui
-               quo
-               enim alias aut maxime necessitatibus, deleniti repellat adipisci perspiciatis odio reiciendis officia
-               architecto facere possimus quaerat, quos incidunt porro culpa iusto. Hic possimus sunt rem minus,
-               consequatur natus atque placeat, ipsam blanditiis totam quibusdam.
+               Registration is available on our website. Just follow these simple steps:
+               Click the <span><a href="#home" class="item__description__link">Apply Now</a></span> button in the top
+               right corner
+               of your screen.
+               Select “Online Courses.”
+               Choose your course(s).
+               You will be asked for basic contact information and your credit card payment. We require full payment at
+               the time of
+               registration and all tuition is billed in US dollars. Be sure to check with your bank or credit card
+               company, as your
+               financial institution may charge a foreign transaction fee.
             </p>
          </li>
          <li class="faq__list__item">
             <p class="item__text">
-               Can i choose a tutor or teacher for online class?
+               How long is my course?
             </p>
             <span class="arrow">
                <span></span>
                <span></span>
             </span>
             <p class="item__description">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae at quasi distinctio assumenda. Ut qui
-               quo
-               enim alias aut maxime necessitatibus, deleniti repellat adipisci perspiciatis odio reiciendis officia
-               architecto facere possimus quaerat, quos incidunt porro culpa iusto. Hic possimus sunt rem minus,
-               consequatur natus atque placeat, ipsam blanditiis totam quibusdam.
+               We currently offer 4-week, 6-week, and 8-week courses. Check the course dates listed online prior to
+               registration.
+               For a 4-week or 6-week course, you can expect to spend 5-7 hours a week reviewing and completing the
+               course material.
+               For an 8-week course, you can expect to spend 8-10 hours a week reviewing and completing the course
+               material.
+               You will also have read-only access to your course in Canvas for 90 days after its conclusion to review
+               the course
+               materials at your leisure.
             </p>
          </li>
          <li class="faq__list__item">
             <p class="item__text">
-               24/7 custemer services?
+               When and how often will my course meet?
             </p>
             <span class="arrow">
                <span></span>
                <span></span>
             </span>
             <p class="item__description">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae at quasi distinctio assumenda. Ut qui
-               quo
-               enim alias aut maxime necessitatibus, deleniti repellat adipisci perspiciatis odio reiciendis officia
-               architecto facere possimus quaerat, quos incidunt porro culpa iusto. Hic possimus sunt rem minus,
-               consequatur natus atque placeat, ipsam blanditiis totam quibusdam.
+               There is no set class time as your course can be accessed 24 hours a day, 7 days a week. We recommend
+               logging on 3 - 4
+               times a week for two hours or more to stay engaged with the class discussion boards and the course
+               materials, as well as
+               to communicate with your instructor.
             </p>
          </li>
          <li class="faq__list__item">
             <p class="item__text">
-               How do i get the online learning materials?
+               I completed my course! Now what?
             </p>
             <span class="arrow">
                <span></span>
                <span></span>
             </span>
             <p class="item__description">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae at quasi distinctio assumenda. Ut qui
-               quo
-               enim alias aut maxime necessitatibus, deleniti repellat adipisci perspiciatis odio reiciendis officia
-               architecto facere possimus quaerat, quos incidunt porro culpa iusto. Hic possimus sunt rem minus,
-               consequatur natus atque placeat, ipsam blanditiis totam quibusdam.
+               Well done! You will have 90 days of read-only access to revisit and reflect on the course material.
+               Get your certificate: When you successfully complete an Online Course, you are eligible to receive a
+               digital certificate
+               of completion. We encourage you to review your instructor’s syllabus to understand the Certificate of
+               Completion
+               requirements for your course. These requirements often include the following:
+               Active participation in the majority of discussion boards
+               Timely submission of all assignments
+               Most courses have 1-2 short written assignments, but it can vary and it is important for you to follow
+               -up with your
+               instructor early in the course should you have any questions or concerns regarding your eligibility or
+               the requirements.
+               Certificates of Completion are delivered to the email used at the time of registration, and can be
+               expected no later
+               than 3 weeks after the course ends. These digital verified credentials allow you to present a trustworthy
+               record of your
+               learning to anyone at any time.
+               Our certificate platform, Accredible, permits you to share your achievement on various social media
+               platforms, embed it
+               on your website, and add it to your LinkedIn profile.
             </p>
          </li>
       </ul>

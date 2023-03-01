@@ -5,21 +5,16 @@
       position: relative;
    }
    &__title {
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 60px;
-      text-align: center;
-      letter-spacing: -1px;
-      color: #ffffff;
-      &::before {
-         content: "";
-         position: absolute;
-         top: -3rem;
-         left: 10px;
-         height: 1px;
-         width: 1180px;
-         background-color: rgba(255, 255, 255, 0.6);
-      }
+      @include title__h2;
+   }
+   .faq__title::before {
+      content: "";
+      position: absolute;
+      top: -3rem;
+      left: 10px;
+      height: 1px;
+      width: 98%;
+      background-color: rgba(255, 255, 255, 0.6);
    }
    &__descr {
       max-width: 440px;
@@ -62,7 +57,14 @@
             color: rgba(255, 255, 255, 0.8);
             transform: scaleY(0);
             transform-origin: top;
-            transition: transform 0.3s ease-in-out;
+            transition: all 0.4s ease;
+            a {
+               color: lighten($color: $color-red, $amount: 15%);
+               @include link__underline;
+               &::after {
+                  background-color: lighten($color: $color-red, $amount: 15%);
+               }
+            }
          }
          .visible {
             transform: scaleY(1);

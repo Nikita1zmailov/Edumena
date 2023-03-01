@@ -7,19 +7,19 @@
    &__title {
       padding: 5rem 0 5rem;
       text-align: center;
-      font-weight: 500;
-      font-size: 48px;
-      line-height: 120%;
-      color: #ffffff;
+      @include title__h2--advantages-sec;
       &::before {
          content: "";
          position: absolute;
          top: 0;
          left: 10px;
          height: 1px;
-         width: 1180px;
+         width: 98%;
          background-color: rgba($color: #fff, $alpha: 0.6);
       }
+   }
+   &-mob {
+      display: none;
    }
    &__container {
       margin-bottom: 23.25rem;
@@ -99,7 +99,7 @@
       }
       .waved_2 {
          &::before {
-            content: url(.../img/svg/arrow_wave_2.svg);
+            content: url(../img/svg/arrow_wave_2.svg);
             position: absolute;
             left: 48%;
             bottom: 15%;
@@ -136,10 +136,7 @@
          }
          &-title {
             margin-bottom: 0.875rem;
-            font-weight: 500;
-            font-size: 40px;
-            line-height: 50px;
-            color: #ffffff;
+            @include title__h2--offers-sec;
          }
          &-descr {
             margin: 0 0 0.875rem;
@@ -191,6 +188,70 @@
             border-top-left-radius: 8px;
             border-bottom-left-radius: 8px;
             z-index: 1;
+         }
+      }
+   }
+   // mobile offers grid
+   .offers-mob {
+      display: none;
+      &__title {
+         margin-bottom: 4rem;
+         font-weight: 500;
+         font-size: 36px;
+         line-height: 140%;
+         letter-spacing: -0.03em;
+      }
+      .offers-mob__grid {
+         display: flex;
+         flex-direction: column;
+         max-width: 100%;
+         margin: 0;
+         .grid__item {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            background-color: #0d0d0d;
+            padding: 0 0 32px;
+            border-radius: 16px;
+            margin-bottom: 3rem;
+            &__wrapper {
+               position: relative;
+               width: 100%;
+               .wrapper__small-title {
+                  position: absolute;
+                  top: 12px;
+                  left: 12px;
+                  padding: 0px 24px;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 24px;
+                  letter-spacing: -0.02em;
+                  background: #f31d1d;
+                  border-radius: 100px;
+                  color: #f1f1f1;
+                  z-index: 4;
+               }
+               .wrapper__img {
+                  border-radius: 0px 0px 16px 16px;
+               }
+            }
+            &__title {
+               padding: 0 12px;
+               margin-top: 1.5rem;
+               font-weight: 600;
+               font-size: 14px;
+               line-height: 24px;
+               letter-spacing: -0.006em;
+               color: #f1f1f1;
+            }
+            &__descr {
+               padding: 0 12px;
+               margin: 0.8rem 0 0;
+               font-weight: 400;
+               font-size: 12px;
+               line-height: 16px;
+               color: #8e8e8e;
+            }
          }
       }
    }

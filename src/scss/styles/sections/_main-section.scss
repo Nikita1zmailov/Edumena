@@ -34,29 +34,12 @@
       align-items: center;
       margin-top: 1rem;
       .author {
-         display: inline-block;
-         position: relative;
+         @include link__underline;
          font-weight: 400;
          font-size: 18px;
          color: $font-main;
          margin-right: 1rem;
          padding: 0.2rem;
-         &::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 1px;
-            bottom: 0;
-            left: 0;
-            background-color: $font-main;
-            transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
-         }
-         &:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-         }
       }
       .stars {
          margin-top: 2px;

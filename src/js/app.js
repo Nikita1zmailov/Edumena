@@ -9,10 +9,28 @@ window.addEventListener('DOMContentLoaded', () => {
    // ! constants
    // const emailRegex = new RegExp(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/, "gm");
    const headerBtn = document.querySelector('.header-btn');
+   const headerLink = document.getElementById('login');
    const hiddenSection = document.getElementById('registration');
    const items = Array.from(document.querySelectorAll('.faq__list__item'));
    const hideMenu = document.querySelector(".wrapper-header");
    let prevScrollpos = window.pageYOffset;
+
+   // ! Smooth scroll
+
+   const anchors = document.querySelectorAll('a[href*="#"]')
+
+   for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+         e.preventDefault()
+
+         const blockID = anchor.getAttribute('href').substr(1)
+
+         document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+         })
+      })
+   }
 
 
 
@@ -51,6 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
    // ! Registration form
    headerBtn.addEventListener('click', showSection);
+   headerLink.addEventListener('click', showSection);
    document.querySelector('.close-form').addEventListener('click', hideSection)
 
    // ! animated section 
@@ -79,17 +98,25 @@ window.addEventListener('DOMContentLoaded', () => {
    // Registration forms
    let registrBtn = document.querySelector(".registration__btn");
    let loginBtn = document.querySelector(".login__btn");
-   // let slider = document.querySelector(".slider");
    let formSection = document.querySelector(".form-swiper");
 
-   console.log(registrBtn, loginBtn, formSection);
 
    registrBtn.addEventListener("click", () => {
       formSection.classList.add("form-section-move");
    });
 
    loginBtn.addEventListener("click", () => {
-      // slider.classList.remove("moveslider");
       formSection.classList.remove("form-section-move");
    });
+
+   // toggle header menu
+   let hamburger = document.querySelector('#hamburger-icon')
+   hamburger.addEventListener('click', toggleMobileMenu);
+
+   function toggleMobileMenu() {
+      [...hamburger.children].forEach(child => {
+         child.classList.toggle('open');
+      })
+   }
+
 })

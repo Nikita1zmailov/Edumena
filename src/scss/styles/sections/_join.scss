@@ -13,12 +13,8 @@
          text-transform: uppercase;
       }
       .wrapper__title {
-         margin-top: 1rem;
-         font-weight: 600;
-         font-size: 40px;
-         line-height: 54px;
-         letter-spacing: -0.5px;
-         color: #ffffff;
+         @include title__h2;
+         text-align: start;
       }
       .wrapper__descr {
          margin: 1rem 0 0;

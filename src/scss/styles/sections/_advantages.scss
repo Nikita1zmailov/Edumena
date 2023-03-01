@@ -1,7 +1,6 @@
 .advantages {
    background-color: #151515;
 }
-
 .grid {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -12,10 +11,7 @@
       min-width: 33rem;
       &-title {
          margin-top: 1.6rem;
-         font-weight: 500;
-         font-size: 48px;
-         line-height: 120%;
-         color: #ffffff;
+         @include title__h2--advantages-sec;
       }
       &-descr {
          max-width: 33rem;

@@ -2,12 +2,7 @@
    background-color: #151515;
    padding: 4rem 0 0;
    &__title {
-      text-align: center;
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 60px;
-      letter-spacing: -0.02em;
-      color: #ffffff;
+      @include title__h2;
    }
    &__descr {
       max-width: 350px;
@@ -42,6 +37,7 @@
                &__img {
                   width: 44px;
                   height: 44px;
+                  cursor: pointer;
                }
                &__container {
                   margin-left: 1rem;
@@ -51,27 +47,9 @@
                      line-height: 24px;
                      color: #c4c4c4;
                      .title__link {
-                        position: relative;
-                        display: inline-block;
-                        transition: all 0.25s ease-out;
+                        @include link__underline;
                         &:hover {
                            color: $font-main;
-                        }
-                        &::after {
-                           content: "";
-                           position: absolute;
-                           width: 100%;
-                           transform: scaleX(0);
-                           height: 1px;
-                           bottom: 0;
-                           left: 0;
-                           background-color: $font-main;
-                           transform-origin: bottom right;
-                           transition: transform 0.25s ease-out;
-                        }
-                        &:hover::after {
-                           transform: scaleX(1);
-                           transform-origin: bottom left;
                         }
                      }
                   }

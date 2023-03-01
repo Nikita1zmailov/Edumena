@@ -8,6 +8,7 @@ gulp.task('deploy', function () {
    return gulp.src('./dist/**/*')
       .pipe(ghPages());
 });
+
 //импорт путей 
 import { path } from "./gulp/config/path.js";
 
@@ -34,7 +35,7 @@ import { images } from "./gulp/tasks/images.js";
 import { otfTotf, ttfToWoff, fontStyle } from "./gulp/tasks/fonts.js";
 import { svgSprive } from "./gulp/tasks/svgSprive.js";
 import { zip } from "./gulp/tasks/zip.js";
-
+import { pages } from "./gulp/tasks/pages.js";
 
 
 // наблюдение за изменениями в файлах 
@@ -44,14 +45,14 @@ function watcher() {
    gulp.watch(path.watch.scss, scss);
    gulp.watch(path.watch.js, js);
    gulp.watch(path.watch.images, images);
-
+   gulp.watch(path.watch.pages, pages);
 }
 
 export { svgSprive }
 
 const fonts = gulp.series(otfTotf, ttfToWoff, fontStyle);
 
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images, pages));
 
 
 //построение сценарие выполнения задач
